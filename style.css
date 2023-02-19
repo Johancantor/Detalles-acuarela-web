@@ -9,7 +9,7 @@ header{
 }
 
 .logodetallesacuarela{
-    margin-left: 0px;
+    margin-left: 40px;
 }
 
 .logodetallesacuarela, .logodetallesacuarelaFooter{
@@ -18,27 +18,22 @@ header{
     height: 200px;
 }
 
-
-
 .caja{
-    width: 940px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
 }
 
-
 nav{
     position: absolute;
     top: 110px;
-    right: 0px;
+    right: 10px;
 }
-
 
 nav li{
     display: inline;
     margin: 0 0 0 15px;
 }
-
 
 nav a{
     text-transform: uppercase;
@@ -48,18 +43,16 @@ nav a{
     text-decoration: none;
 }
 
-
 nav a:hover{
     color: #c7Bc19;
 }
 
-
 .productos{
-    width: 940px;
     margin: 0 auto;
     padding: 50px;
+    background-image: url('/banner.jfif');
+    background-size: cover;
 }
-
 
 .productos li{
     display: inline-block;
@@ -73,7 +66,6 @@ nav a:hover{
     border-radius: 10px;
 }
 
-
 .productos li:hover{
     border-color: #c7Bc19;
 }
@@ -83,12 +75,10 @@ nav a:hover{
     border-color: green;
 }
 
-
 .productos h2{
     font-size: 30px;
     font-weight: bold;
 }
-
 
 .productos, li:hover h2{
     font-size: 33px;
@@ -98,13 +88,11 @@ nav a:hover{
     font-size: 18px;
 }
 
-
 .producto_precio{
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
 }
-
 
 footer{
     text-align: center;
@@ -115,18 +103,15 @@ footer{
     padding: 40px;
 }
 
-
 .copyright{
     color: white;
     font-size: 13px;
     margin: 20px;
 }
 
-
 form{
-    margin: 40px 200px;
+    padding: 40px 200px;
 }
-
 
 form label, form legend{
     display: block;
@@ -141,11 +126,9 @@ form label, form legend{
     width: 50%;
 }
 
-
 .checkbox{
     margin: 20px 0;
 }
-
 
 .enviar{
     width: 40%;
@@ -166,18 +149,15 @@ form label, form legend{
     color: #7B91DF;
 }
 
-
 table{
-    margin: 40px 200px;
+    margin: 40px 200px 0;
 }
-
 
 thead{
     background: #555555;
     color: white;
     font-weight: bold;
 }
-
 
 td, th{
     border: 1px black solid;
@@ -190,7 +170,6 @@ td, th{
 .banner{
     width: 100%;
 }
-
 
 .principal{
     padding: 3em 0;
@@ -210,16 +189,13 @@ td, th{
     margin: 0 0 1em;
 }
 
-
 .principal strong{
     font-weight: bold;
 }
 
-
 .principal em{
     font-style: italic;
 }
-
 
 .utensilios{
     width: 120px;
@@ -227,36 +203,30 @@ td, th{
     margin: 0 20px 20px 0;
 }
 
-
 .mapa{
     padding: 3em 0;
     background: linear-gradient(#FEFEFE, #888888);
 }
-
 
 .mapa p{
     margin: 0 0 2em;
     text-align: center;
 }
 
-
 .mapaContenido{
     width: 940px;
     margin: 0 auto;
 }
-
 
 .diferenciales{
     padding: 3em 0;
     background: #888888;
 }
 
-
 .contenidoDiferenciales{
     width: 640px;
     margin: 0 auto;
 }
-
 
 .imagenDiferenciales{
     width: 60%;
@@ -268,13 +238,11 @@ td, th{
     opacity: 0.3;
 }
 
-
 .listaDiferenciales{
     vertical-align: top;
     width: 40%;
     display: inline-block;
 }
-
 
 .items{
     line-height: 1.5;
@@ -284,11 +252,9 @@ td, th{
     content: "★";
 }
 
-
 .items:first-child{
     font-weight: bold;
 }
-
 
 .video{
     width: 560px;
@@ -359,6 +325,14 @@ article img{
 .Nosotros article:hover p{
     font-weight: bold;
 }
+
+/* AQUI INICIA CSS PARA NUESTRA PAGE NOSOTROS*/
+
+.contactenos{
+    background-image: url('/banner.jfif');
+    background-size: cover;
+}
+
 
 
 @media screen and (max-width:480px){
