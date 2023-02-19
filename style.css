@@ -356,6 +356,10 @@ article img{
     font-size: 30px;
 }
 
+.Nosotros article:hover p{
+    font-weight: bold;
+}
+
 
 @media screen and (max-width:480px){
     h1{
