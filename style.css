@@ -4,9 +4,21 @@ body{
 
 
 header{
-    background-color: brown;
-    padding: 20px 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #7B91DF 0%, rgba(242, 192, 201, 0) 100%);
+    background-blend-mode: normal, darken;
+    box-shadow: inset 0px 4px 4px rgba(255, 51, 252, 0.8);
 }
+
+.logodetallesacuarela{
+    margin-left: 0px;
+}
+
+.logodetallesacuarela, .logodetallesacuarelaFooter{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 
 
 .caja{
@@ -98,7 +110,10 @@ nav a:hover{
 
 footer{
     text-align: center;
-    background: url(bg.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #7B91DF 0%, rgba(242, 192, 201, 0) 100%);
+    background-blend-mode: normal, darken;
+    border: 1px solid #F2C0C9;
+    box-shadow: inset 0px 4px 4px rgba(255, 51, 252, 0.8);
     padding: 40px;
 }
 
@@ -111,7 +126,7 @@ footer{
 
 
 form{
-    margin: 40px 0;
+    margin: 40px 200px;
 }
 
 
@@ -120,7 +135,6 @@ form label, form legend{
     font-size: 20px;
     margin: 0 0 10px;
 }
-
 
 .inputPadron{
     display: block;
@@ -155,7 +169,7 @@ form label, form legend{
 
 
 table{
-    margin: 40px 40px;
+    margin: 40px 200px;
 }
 
 
@@ -296,11 +310,6 @@ td, th{
     border-radius: 10%;
 }
 
-.logoCafe{
-    border-radius: 50%;
-    width: 350px;
-    height: 200px;
-}
 
 
 @media screen and (max-width:480px){
