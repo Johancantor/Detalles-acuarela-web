@@ -52,7 +52,6 @@ nav a{
 
 nav a:hover{
     color: #c7Bc19;
-    /*cambie el text-decoration: underline; en el nava * miguel saganome */
 }
 
 
@@ -311,7 +310,44 @@ td, th{
     border-radius: 10%;
 }
 
+/* AQUI INICIA CSS PARA NUESTRA PAGE NOSOTROS*/
 
+.Nosotros{
+    background-image: url('/banner.jfif');
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 20px 10px;
+
+}
+
+article{
+    margin:0 15px
+}
+
+article h1{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+article img{
+    padding: 10px 10px;
+
+}
+
+.encargado_descripción{
+    padding: 10px;
+    font-style: oblique;
+    font-weight:500;
+}
+
+.cargo{
+    padding: 10px;
+    font-weight: bolder;
+    font-style: italic;
+}
 
 @media screen and (max-width:480px){
     h1{
