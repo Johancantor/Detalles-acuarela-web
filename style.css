@@ -66,7 +66,7 @@ nav a:hover{
 .productos{
     margin: 0 auto;
     padding: 50px;
-    background-image: url('/banner.jfif');
+    background-image: url('./Imagenes/banner.jfif');
     background-size: cover;
 }
 
@@ -296,8 +296,9 @@ td, th{
 /* AQUI INICIA CSS PARA NUESTRA PAGE NOSOTROS*/
 
 .backgroundNosotros{
-    background-image: url('/banner.jfif');
+    background-image: url('./Imagenes/banner.jfif');    
     background-size: cover;
+    
 }
 
 .Nosotros{
@@ -367,8 +368,9 @@ article img{
 /* AQUI INICIA CSS PARA NUESTRA PAGE CONTACTENOS*/
 
 .contactenos{
-    background-image: url('/banner.jfif');
+    background-image: url('/Imagenes/banner.jfif');
     background-size: cover;
+    transition: 3s;
 }
 
 
