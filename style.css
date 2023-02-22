@@ -17,16 +17,21 @@ header{
     width: 150px;
     height: 150px;
 }
-.iconosredes {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    
 
-}
 .icons {
     display: flex;
     justify-content: flex-end;
+}
+
+.icons li{
+    margin: auto 5px;
+}
+
+.iconsLogo img{
+    border:none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
 .caja{
@@ -290,17 +295,29 @@ td, th{
 
 /* AQUI INICIA CSS PARA NUESTRA PAGE NOSOTROS*/
 
-.Nosotros{
+.backgroundNosotros{
     background-image: url('/banner.jfif');
     background-size: cover;
+}
+
+.Nosotros{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
     padding: 20px 10px;
 }
-.Nosotros1{    
+.Nosotros2 h1{    
     text-align: center;
-    
+    padding: 20px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.Nosotros2 p{
+    text-align: center; 
+    margin: 15px auto;
+    font-style: italic;
+    font-weight: bold;
 }
 
 article{
@@ -347,7 +364,7 @@ article img{
 }
 
 
-/* AQUI INICIA CSS PARA NUESTRA PAGE NOSOTROS*/
+/* AQUI INICIA CSS PARA NUESTRA PAGE CONTACTENOS*/
 
 .contactenos{
     background-image: url('/banner.jfif');
