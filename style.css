@@ -2,36 +2,12 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* AQUI INICIA CSS PARA NUESTRO HEADER*/
+
 header{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #7B91DF 0%, rgba(242, 192, 201, 0) 100%);
     background-blend-mode: normal, darken;
     box-shadow: inset 0px 4px 4px rgba(255, 51, 252, 0.8);
-}
-
-.logodetallesacuarela{
-    margin-left: 40px;
-}
-
-.logodetallesacuarela, .logodetallesacuarelaFooter{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
-
-.icons {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.icons li{
-    margin: auto 5px;
-}
-
-.iconsLogo img{
-    border:none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
 }
 
 .caja{
@@ -63,52 +39,7 @@ nav a:hover{
     color: #c7Bc19;
 }
 
-.productos{
-    margin: 0 auto;
-    padding: 50px;
-    background-image: url('./Imagenes/banner.jfif');
-    background-size: cover;
-}
-
-.productos li{
-    display: inline-block;
-    text-align: center;
-    width: 29%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.productos li:hover{
-    border-color: #c7Bc19;
-}
-
-
-.productos li:active{
-    border-color: green;
-}
-
-.productos h2{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.productos, li:hover h2{
-    font-size: 33px;
-}
-
-.producto_descripcion{
-    font-size: 18px;
-}
-
-.producto_precio{
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-}
+/* AQUI INICIA CSS PARA NUESTRO FOOTER*/
 
 footer{
     text-align: center;
@@ -119,65 +50,36 @@ footer{
     padding: 40px;
 }
 
+.logodetallesacuarela{
+    margin-left: 40px;
+}
+
+.logodetallesacuarela, .logodetallesacuarelaFooter{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.iconsLogo img{
+    border:none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.icons li{
+    margin: auto 5px;
+}
+
 .copyright{
     color: white;
     font-size: 13px;
     margin: 20px;
-}
-
-form{
-    padding: 40px 200px;
-}
-
-form label, form legend{
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-
-.inputPadron{
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-}
-
-.checkbox{
-    margin: 20px 0;
-}
-
-.enviar{
-    width: 40%;
-    padding: 15px 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background: #7B91DF;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
-}
-
-.enviar:hover{
-    background: aquamarine;
-    transform: scale(1.2);
-    color: #7B91DF;
-}
-
-table{
-    margin: 40px 200px 0;
-}
-
-thead{
-    background: #555555;
-    color: white;
-    font-weight: bold;
-}
-
-td, th{
-    border: 1px black solid;
-    padding: 8px 15px;
 }
 
 
@@ -185,7 +87,7 @@ td, th{
 
 .banner{
     width: 100%;
-    height: 500px;
+    height: 500px; 
 }
 
 
@@ -285,6 +187,8 @@ td, th{
     padding-bottom: 30px;
 }
 
+/* AQUI INICIA CSS PARA NUESTRA PAGE CATALOGO*/
+
 .mocaccino, .capuccino, .late{
     width: 160px;
     height: 250px;
@@ -292,6 +196,54 @@ td, th{
     padding-bottom: 10px;
     border-radius: 10%;
 }
+
+.productos{
+    margin: 0 auto;
+    padding: 50px;
+    background-image: url('./Imagenes/banner.jfif');
+    background-size: cover;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 29%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color: #c7Bc19;
+}
+
+
+.productos li:active{
+    border-color: green;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos, li:hover h2{
+    font-size: 33px;
+}
+
+.producto_descripcion{
+    font-size: 18px;
+}
+
+.producto_precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 
 /* AQUI INICIA CSS PARA NUESTRA PAGE NOSOTROS*/
 
@@ -373,9 +325,47 @@ article img{
     transition: 3s;
 }
 
+form{
+    padding: 40px 200px;
+}
 
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
 
+.inputPadron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
 
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #7B91DF;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: aquamarine;
+    transform: scale(1.2);
+    color: #7B91DF;
+}
+
+/* AQUI INICIA CSS PARA NUESTRO DISEÑO RESPOSIVE*/
 
 @media screen and (max-width:480px){
     h1{
