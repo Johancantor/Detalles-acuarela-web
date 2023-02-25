@@ -32,3 +32,4 @@ function validarFormulario() {
   alert("El formulario se ha enviado correctamente");
   return true;
 }
+

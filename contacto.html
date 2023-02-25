@@ -31,10 +31,10 @@
 
         <main class="contactenos" >
 
-            <form onsubmit="return validarFormulario()">
+            <form onsubmit="return enviarFormulario(event)" onsubmit="return validarFormulario()">
 
                 <label for="nombreApellido">Nombre Completo</label >
-                <input id="nombre" type="text" id="nombreApellido" class="inputPadron">
+                <input id="nombre" type="text" class="inputPadron">
 
                 <label id="correo" for="correoElectronico">Correo Electronico</label>
                 <input type="email" id="email" name="email" class="inputPadron">
