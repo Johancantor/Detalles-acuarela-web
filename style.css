@@ -1,5 +1,7 @@
+
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;    
+
 }
 
 /* AQUI INICIA CSS PARA NUESTRO HEADER*/
@@ -325,9 +327,13 @@ article img{
     transition: 3s;
 }
 
+<<<<<<< Updated upstream
 form{
     padding: 40px 200px;
 }
+=======
+/* MENU HAMBURGUESA*/
+>>>>>>> Stashed changes
 
 form label, form legend{
     display: block;
@@ -367,7 +373,8 @@ form label, form legend{
 
 /* AQUI INICIA CSS PARA NUESTRO DISEÑO RESPOSIVE*/
 
-@media screen and (max-width:480px){
+@media screen and  (max-width:768px){
+        
     h1{
         text-align: center;
     }

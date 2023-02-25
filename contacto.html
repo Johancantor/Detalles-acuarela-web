@@ -8,6 +8,7 @@
         <title>Detalles acuarela / Contacto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <script src="validarfomulario.js"></script>
 
     </head>
 
@@ -19,7 +20,7 @@
                 <h1><img  class="logodetallesacuarela" src="./Imagenes/logo.jfif" alt="Logo Acuerala"></h1>
                 <nav>
                     <ul>                   
-                            <li> <a href="index.html"> Home</a></li>
+                            <li> <a href="index.html">Home</a></li>
                             <li> <a href="productos.html">Catálogo</a></li>
                             <li> <a href="nosotros.html">Nosotros</a></li>
                             <li> <a href="contacto.html">Contacto</a></li>
@@ -29,15 +30,20 @@
         </header>
 
         <main class="contactenos" >
-            <form >
-                <label for="nombreApellido">Nombre y Apellido</label >
-                <input type="text" id="nombreApellido" class="inputPadron" required>
-                <label for="correoElectronico">Correo Electronico</label>
-                <input type="email" id="correoElectronico" class="inputPadron" required placeholder="email@dominio.com">
+
+            <form onsubmit="return validarFormulario()">
+
+                <label for="nombreApellido">Nombre Completo</label >
+                <input id="nombre" type="text" id="nombreApellido" class="inputPadron">
+
+                <label id="correo" for="correoElectronico">Correo Electronico</label>
+                <input type="email" id="email" name="email" class="inputPadron">
+
                 <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono" class="inputPadron" required placeholder="(xx) xxxx xxxx">
+                <input type="tel" id="telefono" name="telefono" class="inputPadron" >
+
                 <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" class="inputPadron" required></textarea>
+                <textarea cols="70" rows="10" id="mensaje" class="inputPadron"></textarea>
 
                 <fieldset>
                     <legend>¿Como le gustaría que lo contactemos?</legend>
@@ -59,6 +65,9 @@
                 
                 <input type="submit" value="Enviar formulario" class="enviar">
             </form>
+            
+            <script src="validarfomulario.js"></script>
+
 
         </main>
 
