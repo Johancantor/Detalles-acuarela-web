@@ -87,17 +87,12 @@ footer{
 
 /* AQUI INICIA CSS PARA NUESTRA HOME*/
 
-.banner{
-    width: 100%;
-    height: 500px; 
+#imageMain{
+    background-image: url('/Imagenes/banner.jfif');
+    background-size: cover;
 }
+/* .principal{
 
-
-.principal{
-    padding: 3em 0;
-    background: #FEFEFEFE;
-    width: 940px;
-    margin: 0 auto;
 }
 
 .tituloPrincipal{
@@ -187,7 +182,7 @@ footer{
     font-size: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-}
+} */
 
 /* AQUI INICIA CSS PARA NUESTRA PAGE CATALOGO*/
 
@@ -276,7 +271,7 @@ footer{
 }
 
 article{
-    margin:0 15px
+    margin:0 15px;
 }
 
 article h1{
@@ -290,6 +285,13 @@ article img{
     padding: 10px 10px;
     border-radius: 100%;
 }
+
+#one, #two, #three, #four {
+    position: relative;
+    cursor: pointer;
+    border-image: repeat;
+  }
+
 
 .encargado_descripción{
     padding: 10px;
@@ -327,13 +329,13 @@ article img{
     transition: 3s;
 }
 
-<<<<<<< Updated upstream
+/* <<<<<<< Updated upstream */
 form{
     padding: 40px 200px;
 }
-=======
-/* MENU HAMBURGUESA*/
->>>>>>> Stashed changes
+
+/* MENU HAMBURGUESA */
+/* >>>>>>> Stashed changes */
 
 form label, form legend{
     display: block;
