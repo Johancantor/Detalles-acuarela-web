@@ -375,21 +375,26 @@ form label, form legend{
 
 /* AQUI INICIA CSS PARA NUESTRO DISEÑO RESPOSIVE*/
 
-@media screen and  (max-width:768px){
+@media(max-width:480px){
+
         
     h1{
         text-align: center;
     }
-    nav{
-        position: static;
-    }
-    .caja, .principal, .mapaContenido, .contenidoDiferenciales, .video{
+    
+     .caja, .principal, .backgroundNosotros, .mapaContenido, .contenidoDiferenciales, .video{
         width: auto;
     }
 
     .listaDiferenciales, .imagenDiferenciales{
         width: 100%;
     }
+}
+
+@media(min-width:480px){
+ header{
+    width: auto;
+}
 }
 
 
