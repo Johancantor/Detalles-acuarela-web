@@ -34,20 +34,8 @@ three.onclick = function() {
 
       three.style.bottom= timePassed / 5 + 'px';
 
-      if (timePassed > 1830) clearInterval(timer);
+      if (timePassed > 1500) clearInterval(timer);
 
     }, 20);
 }
 
-four.onclick = function() {
-    let start = Date.now();
-
-    let timer = setInterval(function() {
-      let timePassed = Date.now() - start;
-
-      four.style.bottom= timePassed / 5 + 'px';
-
-      if (timePassed > 990) clearInterval(timer);
-
-    }, 20);
-}

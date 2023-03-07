@@ -20,7 +20,7 @@ header{
 
 nav{
     position: absolute;
-    top: 110px;
+    top: 90px;
     right: 10px;
 }
 
@@ -198,6 +198,7 @@ footer{
 
 /* AQUI INICIA CSS PARA NUESTRA PAGE CATALOGO*/
 
+
 .mocaccino, .capuccino, .late{
     width: 160px;
     height: 250px;
@@ -278,7 +279,7 @@ footer{
 
 .Nosotros{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     text-align: center;
     padding: 20px 10px;
 }
@@ -329,6 +330,7 @@ article img{
     padding: 10px;
     font-weight: bolder;
     font-style: italic;
+
 }
 
 .Nosotros article:hover{
@@ -394,9 +396,9 @@ form label, form legend{
 }
 
 .enviar:hover{
-    background: aquamarine;
+    background: rgba(100, 74, 192, 0.792);
     transform: scale(1.2);
-    color: #7B91DF;
+    color: #000000d1;
 }
 
 /* AQUI INICIA CSS PARA NUESTRO DISEÑO RESPOSIVE*/
@@ -408,7 +410,7 @@ form label, form legend{
         text-align: center;
     }
     
-     .caja, .principal, .backgroundNosotros, .mapaContenido, .contenidoDiferenciales, .video{
+    .caja, .principal, .backgroundNosotros, .mapaContenido, .contenidoDiferenciales, .video{
         width: auto;
     }
 
@@ -418,9 +420,75 @@ form label, form legend{
 }
 
 @media(min-width:480px){
- header{
+header{
     width: auto;
 }
+
+/* AQUI INICIA CSS PARA NUESTRO DISEÑO RESPOSIVE CATALOGO*/
+
+
+
+
+@media (max-width: 768px) {
+    .productos li {
+        width: calc(100% / 1);
+        margin-bottom: 30px;
+    }
+    .productos img {
+        max-width: 100%;
+    }
+}
+/* Agrega estilos para dispositivos medianos */
+@media (min-width: 768px) and (max-width: 992px) {
+    .productos li {
+        width: calc(100% / 3);
+        margin-bottom: 30px;
+    }
+}
+/* Agrega estilos para dispositivos grandes */
+@media (min-width: 992px) {
+    .productos li {
+        
+        margin-bottom: 30px;
+    }
 }
 
+/* AQUI INICIA CSS PARA NUESTRO DISEÑO RESPOSIVE NOSOTROS*/
 
+.Nosotros2 {
+    padding: 2em 5%;
+  }
+  
+  .Biografia {
+    width: 70%;
+    height: auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .caja {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     
+    }
+  
+   
+  
+    .caja nav {
+      flex: 1;
+    }
+  
+    .Nosotros {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .perfilJohan,
+    .perfilMiguel,
+    .perfilJenny {
+      flex: 0 0 calc(25% - 2em);
+      margin: 4em;
+    }
+}
+}
