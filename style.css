@@ -38,7 +38,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #c7Bc19;
+    color: #82218f;
 }
 
 /* AQUI INICIA CSS PARA NUESTRO FOOTER*/
@@ -213,6 +213,24 @@ footer{
     background-image: url('/Imagenes/fondo2.jpg');
     background-size: cover;
 }
+button {
+    background-color: #e06a8d;
+    border: none;
+    color: rgb(8, 8, 8);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    background-color: #df8cf0;
+  }
+  
 
 .productos li{
     display: inline-block;
@@ -245,7 +263,7 @@ footer{
     image-resolution:unset;
     width: 200px;
     height: 200px;
-    border: 5px solid yellowgreen;
+    border: 5px solid rgb(10, 146, 180);
     border-radius: 50%;
 }
 
