@@ -10,13 +10,81 @@ header{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #7B91DF 0%, rgba(242, 192, 201, 0) 100%);
     background-blend-mode: normal, darken;
     box-shadow: inset 0px 4px 4px rgba(255, 51, 252, 0.8);
+    
 }
 
 .caja{
     width: 100%;
     position: relative;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
+
+
+/*boton busqueda*/
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .search-box input {
+    flex: 1;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  #search-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  #search-btn:hover {
+    background-color: #0a0a0a95;
+  }
+  
+  #search-btn:active {
+    background-color: #005cbf;
+  }
+
+  /*finaliza boton buqueda*/
+  
+  /*Empieza el css resgistro y login*/
+
+  .regis-login{
+
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;  
+  background-color: #f3f5f35f;
+  border-radius: 5px;
+  margin: 0 10px;
+
+}
+.re{
+    text-decoration: dashed;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    text-shadow: 10px 5px 10px #d8d8e0;
+    font-weight: 1000;
+}
+
+.regis-login:hover{
+    background-color: #d9c8fd45;
+}
+
+/*Finaliza el css resgistro y login*/
 
 nav{
     position: absolute;
@@ -443,6 +511,18 @@ form label, form legend{
 header{
     width: auto;
 }
+h1{
+    text-align: center;
+}
+
+.caja, .principal, .backgroundNosotros, .mapaContenido, .contenidoDiferenciales, .video{
+    width: auto;
+}
+
+.listaDiferenciales, .imagenDiferenciales{
+    width: 100%;
+}
+}
 
 /* AQUI INICIA CSS PARA NUESTRO DISEÑO RESPOSIVE CATALOGO*/
 
@@ -487,7 +567,7 @@ header{
   @media screen and (min-width: 768px) {
     .caja {
       display: flex;
-      justify-content: space-between;
+      justify-content:flex-start;
       align-items: center;
      
     }
@@ -510,5 +590,4 @@ header{
       flex: 0 0 calc(25% - 2em);
       margin: 4em;
     }
-}
 }
