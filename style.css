@@ -492,6 +492,11 @@ form label, form legend{
 /* AQUI INICIA CSS PARA NUESTRO DISEÑO RESPOSIVE*/
 
 @media(max-width:480px){
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
         
     h1{
@@ -510,6 +515,11 @@ form label, form legend{
 @media(min-width:480px){
 header{
     width: auto;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     text-align: center;
