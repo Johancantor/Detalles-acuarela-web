@@ -13,49 +13,82 @@
     <body>
 
         <header>
-        
-            <div class="caja">
-                <h1><img class="logodetallesacuarela" src="./Imagenes/logo.jfif"></h1>
-                
             
-                    <div class="search-box">
-                        <input type="text" placeholder="Buscar aqui...">
-                        <button id="search-btn">Buscar</button>
-                </div>
-                
-                <section class="regis-login">
-                    <ul>            
-                    <li><a class="re" href="Registro.html">Registro</a></li>
-                    <span> </span>
-                    <span> </span>
-                    <li><a class="re" href="Login.html">Login page</a></li>
-                    </ul>
-                </section>
-                <section>
-                <nav>
-                    <ul>                    
-                        <li> <a href="index.html"> Home</a></li>
-                        <li> <a href="productos.html">Catálogo</a></li>
-                        <li> <a href="nosotros.html">Nosotros</a></li>
-                        <li> <a href="contacto.html">Contacto</a></li>
-                        <li> <a href="https://buy.stripe.com/test_cN200o9fudu2cdaaEF
-                            " ><img src="./Imagenes/icons8-agregar-a-carrito-de-compras-50.png" alt="Carrito de compras"></a> </li>
-                    </ul>
-                </nav> 
-                </section>
-                    
-                
 
-        </header>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="productos.html">Catálogo</a></li>
+                        <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li><a class="nav-link" href="https://buy.stripe.com/test_cN200o9fudu2cdaaEF"><img src="./Imagenes/icons8-agregar-a-carrito-de-compras-50.png" alt="Carrito de compras"></a></li>
+                      </ul>
+                </nav>
+                
+            </div>
+
+        </div>
+
+        <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+        </div>
+    <script src="./JS/MenuHam.js"></script>
+        <div class="caja">
+            <h1><img class="logodetallesacuarela" src="./Imagenes/logo.jfif"></h1>
+            
+        
+            <div class="search-box">
+                    <input type="text" placeholder="Buscar aqui...">
+                    <button id="search-btn">Buscar</button>
+            </div>
+            
+            <section class="regis-login">
+                <ul>            
+                <li><a class="re" href="Registro.html">Registro</a></li>
+                <a href="#">
+
+                </a>
+                <li><a class="re" href="login.html">Login</a></li>
+                </ul>
+            </section>
+
+           </div> 
+
+    <!--
+<section class="container">
+<nav>
+<div class="nav-wrapper">
+  <ul>
+    <li><a class="nav-link" href="index.html">Home</a></li>
+    <li><a class="nav-link" href="productos.html">Catálogo</a></li>
+    <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+    <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+    <li><a class="nav-link" href="https://buy.stripe.com/test_cN200o9fudu2cdaaEF"><img src="./Imagenes/icons8-agregar-a-carrito-de-compras-50.png" alt="Carrito de compras"></a></li>
+  </ul>
+  <div class="hamburger-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</div>
+</nav>
+</section>
+
+      -->          
+            
+
+</header>
         
 
 
         <main class="catalogo" id="imageMain">
 
             
-
-            <ul class="productos"
-            class="button">
+        <div class="cajaproductos">
+            <ul class="productos" class="button">
                 <li>
                     <h2>LIBRETAS</h2>
                     <img  class="capuccino" src="./Imagenes/agendas.jpeg" alt="imagen agenda">
@@ -123,8 +156,9 @@
 
                 </li>
             </ul>
+            </div>
         </main>
-
+       
         <footer>
             <div>
                 <img class="logodetallesacuarelaFooter" src="./Imagenes/logo.jfif" alt="logoFooter">
