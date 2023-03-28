@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .bars__menu{
     z-index: 1;
     width: 30px;
     height: 30px;    
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 90%;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -17,7 +18,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0);
     margin-top: 6px;
     transform-origin: 0px 100%;
     transition: all 300ms;
@@ -81,10 +82,11 @@ header{
     padding: 10px;
 
     width: 100%;
-    height: 35%;
-    position: fixed;
-    z-index: 100;    
+    height: 35%;   
+    z-index: 100;
+    padding-bottom: 40px;    
 }
+
 
 .container__header{
     max-width: 1200px; 
@@ -100,7 +102,7 @@ header .container__header {
     display: block;
     position: absolute;
     top: 0;
-    width: 200px; /* Ajustar el tamaño según sea necesario */
+    width: 100px; /* Ajustar el tamaño según sea necesario */
     margin: 10px; /* Ajustar el espaciado según sea necesario */
   }
 
@@ -117,7 +119,9 @@ header .container__header {
 .menu nav ul li{
     list-style: none;
     margin: 20px 16px;
+    
 }
+
 .menu nav ul li a{
     color: var(--color_text-secundary);
     font-size: var(--lowText_font_size);
@@ -132,18 +136,21 @@ header .container__header {
 /*portada de inicio*/
 
 .container__cover{
-    padding-top: 100px;
+    
+    padding-top: 10px;
     padding-bottom: 100px;
-    background: var(--main_color-secundary);
+    background-color: #d3c3d74d;
 
 }
 .cover{
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 300px;
+    
+    background-image: url('/HTML/Imagenes/fondo-formas-geometricas.jpg');
+    background-size: cover;
+    max-width: 1200px;        
     display: flex;
     align-items: center;
     padding: 0px 20px;
+
 
 }
 
@@ -153,23 +160,28 @@ header .container__header {
 
 }
 .text__cover h1{
-    font-size: 50px;
+    padding-top: 10%;
+    font-size: 40px;
     color: var(--color_text-secundary);
+    
 
 }
 
 .text__cover p{
     font-size: var(--text_paragraph);
     margin-top: 40px;
-    color: var(--color-text-tertiary);
+    color: var(--color_text-secundary);
+    font-size: 19px;
+    text-align: center;
 }
 .btn__text{
+    text-decoration: dashed;
     display: block;
     width: 150px;
     margin-top: 40px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 1000;
     background: var(--main_color-primary);
     color: white;
     border-radius: 8px;
@@ -177,17 +189,25 @@ header .container__header {
     cursor: pointer;
     transition: all 300ms;
 
+
 }
 .btn__text:hover{
     background: transparent;
     border: 2px solid var(--main_color-primary);
     color: var(--color_text-primary);
 }
-.image__cover{
-    width: 100%;
-}
+.image__cover img {
+    transition: transform 0.3s ease-out;
+  }
+  
+ .image__cover img:hover {
+    transform: matrix(0.7, -0.5, 0.5, 0.4, 0.5, 0.7);
+  }
+  
 .image__cover img{
     width: 550px;
+    border-radius: 13%;
+    
 }
 
 
@@ -237,7 +257,7 @@ header .container__header {
     padding: 10px;
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .search-box {
       flex-direction: column;
       align-items: stretch;
@@ -249,8 +269,8 @@ header .container__header {
   .search-box input {
     flex: 1;
     border: none;
-    padding: 5px;
-    font-size: 20px;
+    padding: 11px;
+    font-size: 1em;
   }
   
   #search-btn {
@@ -276,10 +296,9 @@ header .container__header {
   /*Empieza el css resgistro y login*/
 
   .regis-login{
-
+  
   display: block;
-  padding: 20px 10px;
-  font-size: 25px;  
+  font-size: 20px;
   background-color: #f3f5f35f;
   border-radius: 5px;
 
@@ -288,7 +307,7 @@ header .container__header {
     text-decoration: dashed;
     text-transform: uppercase;
     font-variant: small-caps;
-    text-shadow: 10px 5px 10px #d8d8e0;
+    text-shadow: 4px 5px 5px #bac9cad2;
     font-weight: 1000;
 }
 
@@ -300,7 +319,7 @@ header .container__header {
 
 nav{
     position: absolute;
-    top: 120px;
+    top: 142px;
     right: 10px;
 }
 
@@ -370,6 +389,7 @@ footer{
 #imageMain{
     background-image: url('/HTML/Imagenes/fondo2.jpg');
     background-size: cover;
+    
 }
 
 .video h1{
@@ -486,9 +506,7 @@ footer{
     padding-bottom: 10px;
     border-radius: 10%;
 }
-.cajaproductos{
-    padding-top: 20%;
-}
+
 
 .productos{
     margin: 0 auto;
@@ -586,9 +604,7 @@ button {
     
 }
 
-.Nosotros22{
-    padding-top: 13%;
-}
+
 
 .Nosotros2 h1{    
     text-align: center;
@@ -664,12 +680,15 @@ article img{
     background-image: url('/Imagenes/fondo2.jpg');
     background-size: cover;
     transition: 3s;
+    
 }
 
 /* <<<<<<< Updated upstream */
 form{
-    padding-top: 253px;
+    padding-top: 100px;
     padding-left: 20%;
+    display: block;
+    
 }
 
 
@@ -730,6 +749,8 @@ form label, form legend{
     .listaDiferenciales, .imagenDiferenciales {
         width: 100%;
     }
+       
+
     
 }
 @media  (max-width: 768px) {
@@ -741,8 +762,41 @@ form label, form legend{
         top: 35%;
         left: 90%;
         transform: translate(-50%, -50%);
-        cursor: pointer;
+        cursor: pointer;        
 }
+@media screen and (max-width: 768px) {
+    .menu nav {
+      display: none;
+    }
+    .menu {
+      position: absolute;
+      padding-top: 25%;
+      padding-left: 90%;
+      
+
+    }
+    .bars__menu {
+      display: block;
+    }
+    .bars__menu span {
+      background-color: var(--color_text-secundary);
+    }
+    .menu.open nav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--color_background-primary);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .menu.open nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
     
 }
 @media (min-width: 768px) {
