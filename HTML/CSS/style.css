@@ -490,61 +490,56 @@ iframe {
   border: 0;
 }
 
-
-
-/*                            REVISAR AQUI VOY
-  
-  .details {
+.details {
     text-align: center;
-    opacity: 0;
-    transform: translateY(50%);
+    color: #101E2C;
+    transform: translateY(80%);
     animation: slide-up 1s ease forwards;
   }
   
   .titulo-principal {
-    font-size: 2em;
-    margin: 0.5em 0;
-    color: #333;
+    border: 5px solid #939;
+    padding: 15px  60px;
+    border-radius: 16px;
+    box-shadow: inset 0 0 15px #939, 0 0 30px #939;
+    position: relative;
+  }
+
+.title-second{
+    font-size: 30px;
+    font-weight: 800;
+    color: #222;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+.title-second:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #993399,
+    0 0 25px #993399,
+    0 0 50px #993399,
+    0 0 100px #993399;
   }
   
   .personalizados {
-    max-width: 100%;
+    padding-bottom: 1%;
+    max-width: 40%;
     height: auto;
     margin-bottom: 1em;
+    border-radius: 7%;
   }
   
   #mision {
     font-style: italic;
     margin-bottom: 1em;
     color: #666;
-  }
-  
-  .mapa {
-    margin-top: 2em;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    opacity: 0;
-    transform: translateY(50%);
-    animation: slide-up 1s ease forwards;
-  }
-  
-  .mapa-contenido {
-    padding: 2em;
-  }
-  
+  }  
   .titulo-principal {
     font-size: 2em;
     margin: 0.5em 0;
     color: #333;
-  }
-  
-  iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
-    opacity: 0;
-    transform: translateY(50%);
-    animation: slide-up 1s ease forwards;
+    text-align: center;
   }
   
   @keyframes slide-up {
@@ -558,26 +553,22 @@ iframe {
     }
   }     REVISAR
   
-*/
 
 
-/* AQUI INICIA CSS PARA NUESTRA PAGE CATALOGO*/
+
+/* AQUI INICIA CSS PARA NUESTRA PAGE CATALOGO ACA VOYYYY*/
 
 
-.mocaccino, .capuccino, .late{
-    width: 160px;
-    height: 250px;
+
+.cajas{
     padding-top: 5px;
-    padding-bottom: 10px;
-    border-radius: 10%;
 }
-
 
 .productos{
     margin: 0 auto;
     padding: 35px;
     background-image: url('/Imagenes/fondo2.jpg');
-    background-size: cover;
+    
 }
 button {
     background-color: #e06a8d;
@@ -586,7 +577,6 @@ button {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 10px 2px;
     cursor: pointer;
@@ -596,14 +586,16 @@ button {
   button:hover {
     background-color: #df8cf0;
   }
+
+.productos ul{
+    display: grid;
+
+}
   
 
 .productos li{
-    display: inline-block;
+    display: inline-flex;
     text-align: center;
-    width: 29%;
-    vertical-align: top;
-    margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
     border: 2px solid black;
@@ -999,3 +991,8 @@ form label, form legend{
 
         }
 }
+
+
+
+
+
