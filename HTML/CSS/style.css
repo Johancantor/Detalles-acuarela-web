@@ -54,7 +54,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 10px 20px;
 
 }
 header .container__header {
@@ -179,6 +179,9 @@ nav a{
 }
 .image__cover img {
     transition: transform 0.3s ease-out;
+    
+    
+
   }
   
  .image__cover img:hover {
@@ -208,7 +211,7 @@ nav a{
     width: 30px;
     height: 30px;    
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 90%;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -394,6 +397,7 @@ footer{
 
 
 #imageMain{
+    padding-bottom: 0%;
     background-image: url('/HTML/Imagenes/fondo2.jpg');
     background-size: cover;
     
@@ -551,25 +555,35 @@ iframe {
       opacity: 1;
       transform: translateY(0);
     }
-  }     REVISAR
+  }     
   
 
 
 
-/* AQUI INICIA CSS PARA NUESTRA PAGE CATALOGO ACA VOYYYY*/
+/* AQUI INICIA CSS PARA NUESTRA PAGE CATALOGO*/
+
+<div class="card__nombre">
+        <img src="./Imagenes/organizador.jpeg" class="img2" alt="">
+        <h1>CARPETA</h1>
+        
+    </div>
+    <hr>
+    <div class="card__descripcion">
+        <h2>DESCRIPCION</h2>
+        <br>
+        <p class="Descripcion">Una carpeta archivadora de tamaño carta con tres anillos para organizar y almacenar papeles importantes, como facturas o informes de trabajo.</p>
+        <p class="producto_precio"> $ 17.000</p>
+    </div>
+    <br>
+    <div class="card__button">
+        <a class="enlace" href="https://buy.stripe.com/test_5kA9AY8bqgGecdaeV0">Comprar</a>
+    </div>
+</div><div class="card__perfil">
 
 
+/*
 
-.cajas{
-    padding-top: 5px;
-}
 
-.productos{
-    margin: 0 auto;
-    padding: 35px;
-    background-image: url('/Imagenes/fondo2.jpg');
-    
-}
 button {
     background-color: #e06a8d;
     border: none;
@@ -643,7 +657,7 @@ button {
     font-weight: bold;
     margin-top: 10px;
 }
-
+*/
 
 /* AQUI INICIA CSS PARA NUESTRA PAGE NOSOTROS*/
 
@@ -661,12 +675,13 @@ button {
     
 }
 .card{
+    padding-top: 10%;
     width: 100%;
     display: flex;
     gap: 100px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    
 }
 .card__perfil{
     width: 310px;
@@ -675,6 +690,96 @@ button {
     border: solid rgba(3, 133, 255, 0) 2px;
     border-radius: 10px;
 }
+
+
+
+/*EMPIEZA CATALOGO*/
+
+
+.card__productos{
+    width: 310px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgb(201, 201, 201);
+    border: solid rgba(3, 133, 255, 0) 2px;
+    border-radius: 10px;
+}
+.card__productos:hover{
+    border: solid rgb(3, 133, 255) 2px;
+}
+
+.img2{
+    image-resolution:unset;
+    width: 250px;
+    height: 250px;
+    border: 5px solid rgb(10, 146, 180);
+    border-radius: 50%;
+
+}
+.card__nombreprod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.producto__precio{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2c2878e7;
+    color: #fff;
+
+}
+.spaceprod {
+    height: 4px;
+    background-color: #9037c1;
+    animation: pulse 1s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  .card__buttonprod{
+    text-align: center;
+    background-color: #e06a8d;
+    border: none;
+    color: rgb(8, 8, 8);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .card__buttonprod:hover {
+    background-color: #df8cf0;
+  }
+
+.enlaceprod{
+    padding: 8px 20px;
+    color: white;
+    text-decoration: none;
+}
+  
+  
+
+
+/*FINALIZA CATALOGO*/
+
+
+
 .card__perfil:hover{
     border: solid rgb(3, 133, 255) 2px;
 }
@@ -912,8 +1017,10 @@ form label, form legend{
     flex-direction: column;
     align-items: stretch;
     padding: 20px;
+    
   }
 @media screen and (max-width: 768px) {
+    
     .menu nav {
       display: none;
     }
@@ -925,11 +1032,13 @@ form label, form legend{
 
     }
     .bars__menu {
-      display: block;
+      padding-top: 17px;
     }
+
     .bars__menu span {
       background-color: var(--color_text-secundary);
     }
+    
     .menu.open nav {
       display: flex;
       flex-direction: column;
