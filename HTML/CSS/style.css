@@ -134,6 +134,7 @@ nav a{
 }
 
 .text__cover{
+    align-content: center;
     width: 100%;
     padding-right: 150px;
 
@@ -403,12 +404,21 @@ footer{
     background-size: cover;
     
 }
-
-.video h1{
-    font-size: 30px;
-    padding-top: 30px;
-    padding-bottom:30px auto;
+.textvideo{
+    padding-top: 20px;
+    font-size: 3em;
+  font-weight: bold;
+  color: #78047cec;
+  text-align: center;
+  text-shadow: 2px 2px 4px #aaa;
 }
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
 
 .seccionprincipal{
     display: grid;
@@ -1006,6 +1016,7 @@ form label, form legend{
 @media screen and (max-width: 768px) {
     
     .menu nav {
+    
       display: none;
     }
     .menu {
@@ -1016,7 +1027,7 @@ form label, form legend{
 
     }
     .bars__menu {
-      padding-top: 17px;
+      padding-top: 30px;
     }
 
     .bars__menu span {
