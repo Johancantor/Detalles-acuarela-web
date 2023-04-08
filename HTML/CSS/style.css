@@ -70,7 +70,8 @@ header .container__header {
     align-items: center;
 }
 .menu nav{
-    margin: 0px 20px;
+    z-index: 1;
+    margin: 20px;
 }
 .menu nav{
     display: flex;
@@ -189,7 +190,7 @@ nav a{
   }
   
 .image__cover img{
-    width: 550px;
+    width: 100%;
     border-radius: 13%;
     
 }
@@ -411,7 +412,7 @@ footer{
 
 .seccionprincipal{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
 }
 
 .diferenciales{
@@ -561,25 +562,6 @@ iframe {
 
 
 /* AQUI INICIA CSS PARA NUESTRA PAGE CATALOGO*/
-
-<div class="card__nombre">
-        <img src="./Imagenes/organizador.jpeg" class="img2" alt="">
-        <h1>CARPETA</h1>
-        
-    </div>
-    <hr>
-    <div class="card__descripcion">
-        <h2>DESCRIPCION</h2>
-        <br>
-        <p class="Descripcion">Una carpeta archivadora de tamaño carta con tres anillos para organizar y almacenar papeles importantes, como facturas o informes de trabajo.</p>
-        <p class="producto_precio"> $ 17.000</p>
-    </div>
-    <br>
-    <div class="card__button">
-        <a class="enlace" href="https://buy.stripe.com/test_5kA9AY8bqgGecdaeV0">Comprar</a>
-    </div>
-</div><div class="card__perfil">
-
 
 /*
 
@@ -957,6 +939,7 @@ form label, form legend{
         position: absolute;
         padding-top: 25%;
         padding-left: 90%;     
+        padding-right: 15px;
       }
       .navhamburguesa{
         position: absolute;
@@ -1002,7 +985,8 @@ form label, form legend{
         top: 35%;
         left: 90%;
         transform: translate(-50%, -50%);
-        cursor: pointer;        
+        cursor: pointer;       
+
 }
 
     .regis-login{
@@ -1026,7 +1010,7 @@ form label, form legend{
     }
     .menu {
       position: absolute;
-      padding-top: 25%;
+      padding-top: 42%;
       padding-left: 90%;
       
 
