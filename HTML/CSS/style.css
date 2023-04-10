@@ -1014,6 +1014,10 @@ form label, form legend{
     
   }
 @media screen and (max-width: 768px) {
+  header {
+    width: auto;
+    padding-bottom: 150px;
+  }
     
     .menu nav {
     
@@ -1021,7 +1025,7 @@ form label, form legend{
     }
     .menu {
       position: absolute;
-      padding-top: 42%;
+      padding-top: 48%;
       padding-left: 90%;
       
 
@@ -1094,6 +1098,15 @@ form label, form legend{
         }
 
         }
+}
+@media (min-width: 768px) and (max-width: 955px) {
+  header {
+    width: auto;
+    padding-bottom: 150px;
+  }
+  .navhamburguesa {
+    padding-top:30%;
+  }
 }
 
 
