@@ -134,12 +134,13 @@ nav a{
 }
 
 .text__cover{
-    align-content: center;
+     
     width: 100%;
     padding-right: 150px;
 
 }
 .text__cover h1{
+  
     padding-top: 10%;
     font-size: 40px;
     color: var(--color_text-secundary);
@@ -1111,7 +1112,19 @@ form label, form legend{
     padding-top:30%;
   }
 }
+@media (min-width: 200px) and (max-width: 768px) {
+  header {
+    width: auto;
+    padding-bottom: 150px;
+  }
+  .navhamburguesa {
+    margin-top: -105px;
+  }
+  .bars__menu{
+    padding-bottom: 90px;
 
+  }
+}
 
 
 
